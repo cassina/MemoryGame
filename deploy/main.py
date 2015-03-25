@@ -14,13 +14,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+import os
 import webapp2
+import jinja2
+
+JINJA_ENVIRONMENT = jinja2.Environment(
+    loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
+    extensions=['jinja2.ext.autoescape'],
+    autoescape=True)
 
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+
+        template = JINJA_ENVIRONMENT.get_template('templates/main_decorator.html')
+        self.response.write(template.render())
 
 app = webapp2.WSGIApplication([
-    ('/', MainHandler)
-], debug=True)
+                              ('/', MainHandler)
+                              ], debug=True)

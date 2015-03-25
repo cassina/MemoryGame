@@ -1,0 +1,46 @@
+@mixin cardBasic {
+  width: 175px;
+  height: 175px;
+  background: no-repeat;
+  background-size: cover;
+}
+
+@mixin composers {
+  .bach {
+    background-image: url("../../img/bach.jpg");
+  }
+  .bartok {
+    background-image: url("../../img/bartok.jpg");
+  }
+  .beetho {
+    background-image: url("../../img/beetho.jpg");
+  }
+  .brahms {
+    background-image: url("../../img/brahms.jpg");
+  }
+  .liszt {
+    background-image: url("../../img/liszt.jpg");
+  }
+  .pucc {
+    background-image: url("../../img/pucc.jpg");
+  }
+  .rach {
+    background-image: url("../../img/rach.jpg");
+  }
+  .tchai {
+    background-image: url("../../img/tchai.jpg");
+  }
+}
+
+
+  .game-canvas {
+    .card {
+      @include cardBasic;
+    }
+
+    @include composers;
+
+    .card-back {
+      background-image: url("../../img/clef.png");
+    }
+  }
