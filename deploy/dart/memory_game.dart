@@ -1,7 +1,5 @@
 /******************************************************
-      Created by Bernardo Cassina 24/03/2015
-
-          Composer Memory Game / Composer Memorama
+      Composer Memory Game / Composer Memorama
 ******************************************************/
 
 import 'dart:html';

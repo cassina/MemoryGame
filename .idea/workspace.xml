@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70c2fa1f-1fcd-4a9c-98a8-00dd630382d1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/deploy/dart/main_controller.dart" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MemoryGame.iml" afterPath="$PROJECT_DIR$/MemoryGame.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deploy/styles/sass/_card_style.scss" afterPath="$PROJECT_DIR$/deploy/styles/sass/_card_style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deploy/dart/main.js" afterPath="$PROJECT_DIR$/deploy/dart/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deploy/dart/memory_game.dart" afterPath="$PROJECT_DIR$/deploy/dart/memory_game.dart" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deploy/styles/stylesheets/screen.css" afterPath="$PROJECT_DIR$/deploy/styles/stylesheets/screen.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deploy/styles/sass/screen.scss" afterPath="$PROJECT_DIR$/deploy/styles/sass/screen.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MemoryGame.iws" />
@@ -71,7 +64,7 @@
       <file leaf-file-name="memory_game.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deploy/dart/memory_game.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6746204" vertical-offset="424" max-vertical-offset="2775">
+            <state vertical-scroll-proportion="-0.26898047" vertical-offset="859" max-vertical-offset="2775">
               <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
               <folding>
                 <element signature="e#0#5192#0" expanded="true" />
@@ -730,12 +723,12 @@
       <option name="number" value="Default" />
       <updated>1427148052904</updated>
       <workItem from="1427148055081" duration="31069000" />
-      <workItem from="1427300452389" duration="2637000" />
+      <workItem from="1427300452389" duration="2879000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33706000" />
+    <option name="totallyTimeSpent" value="33948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -980,7 +973,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/deploy/dart/memory_game.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6746204" vertical-offset="424" max-vertical-offset="2775">
+        <state vertical-scroll-proportion="-0.26898047" vertical-offset="859" max-vertical-offset="2775">
           <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
           <folding>
             <element signature="e#0#5192#0" expanded="true" />
