@@ -16,6 +16,9 @@ const List<String> _COMPOSERS = const ['bach', 'bartok',
                                         'beetho', 'brahms',
                                         'liszt', 'pucc',
                                         'rach', 'tchai'];
+
+//HTML Strings
+const String _END_GAME_BUTTONS = '<button class="restart-button animated">Restart</button><button class="quit-button animated">Quit</button>';
 //To keep track of new deck every new game
 List<String> currentDeck = new List();
 
@@ -33,11 +36,17 @@ ImageElement lastClickedCard;
 /* MAIN FUNCTION */
 void main() {
   newGame();
+
 }
 
 /* GAME HANDLERS */
 //New Game method
 void newGame() {
+  querySelectorAll('.restart-button').onClick.listen((Event event) {
+    print('clicked');
+    restart();
+    print('clicked');
+  });
   restart();
 }
 
@@ -70,7 +79,7 @@ void gameAsyncAction(MouseEvent event) {
     lastClickedCard = clickedCard;
     //If the user found a pair,
     // end method: don't flip that composer back
-    //TODO append Overlay instead of beaten to solve
+    //TODO append Overlay instead of beaten to solve fucking bug
   } else if(clickedCard.classes.contains('beaten')) {
     return;
   } else {
@@ -87,7 +96,7 @@ void gameAsyncAction(MouseEvent event) {
     //Test after every beaten pair if got any chances left.
     // If so, end game and ask for Restart or Quit.
     //TODO change order of if statements
-    else if(strikes == 8) {
+    else if(strikes == 7) {
       endGame();
       //Test if it's a strike and, elements to DOM to update game scoring and
       //Flip back the cards clicked after 1 second
@@ -137,14 +146,16 @@ void restart() {
 void endGame(){
   //Appends Overlay z-index > game canvas
   DivElement overlay = new DivElement();
-  overlay.setAttribute('style', 'background-color: black; z-index:3;');
+  overlay.classes.add('overlay');
   querySelector('body').insertAdjacentElement('afterEnd', overlay);
   //Pops div > Overlay TODO with Restart or quit buttons & score
-  DivElement yesOrNo = new DivElement();
-  overlay.setAttribute('style', 'background-color: blue; z-index:4;');
-  querySelector('body').insertAdjacentElement('afterEnd', yesOrNo);
+  DivElement endGamePopup = new DivElement();
+  endGamePopup.classes.add('end-game-popup');
+  endGamePopup.appendHtml(_END_GAME_BUTTONS);
+  querySelector('body').insertAdjacentElement('afterEnd', endGamePopup);
 }
-/*TODO bool quit(){
+/*TODO
+//bool quit(){
 //Quit erases the DOM entirely must reload page to new game
 // while(!quit) => new game
   bool quit;
